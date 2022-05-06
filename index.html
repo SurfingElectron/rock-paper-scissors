@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rock Paper Scissors</title>
+  </head>
+  <h1 id="page_title">Rock, Paper, Scissors!</h1>
+
+  <div class="username_form">
+    <form id="username_entry" name="username_entry">
+      <label for="username">Please enter your name (max 10 characters):</label><br>
+      <input type="text" id="username" name="username" required minlength="2" maxlength="10" size="12" placeholder="Name">
+      <input id="submit_button" type="submit" value="Submit">
+    </form> 
+  </div>
+
+  <p id="player_choice">Please choose your move:</p>
+  <div class="player_choice_buttons">
+    <button id="rock_button" class="rps_button">Rock</button>
+    <button id="paper_button" class="rps_button">Paper</button>
+    <button id="scissors_button" class="rps_button">Scissors</button>
+  </div>
+
+  <p id="computer_choice">The computer chose:</p>
+
+  <h2 id="results">Results:</h2>
+  <ul>
+    <li id="total_games">Games played: 0</li>
+    <li id="wins">Won: 0</li>
+    <li id="losses">Lost: 0</li>
+    <li id="draws">Drew: 0</li>
+  </ul>
+  <body>
+    <script src="main.js"></script>
+  </body>
+</html>

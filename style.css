@@ -1,0 +1,12 @@
+.username_entry {
+  display: flex;
+}
+
+.player_choice_buttons {
+    display: flex;
+  }
+  
+  .rps_button {
+    padding: 32px;
+    margin: 16px;
+  }
