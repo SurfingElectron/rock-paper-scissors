@@ -7,33 +7,38 @@
     <link rel="stylesheet" href="style.css" />
     <title>Rock Paper Scissors</title>
   </head>
+
   <h1 id="page_title">Rock, Paper, Scissors!</h1>
 
-  <div class="username_form">
-    <form id="username_entry" name="username_entry">
-      <label for="username">Please enter your name (max 10 characters):</label><br>
-      <input type="text" id="username" name="username" required minlength="2" maxlength="10" size="12" placeholder="Name">
-      <input id="submit_button" type="submit" value="Submit">
-    </form> 
+  <div class="container">
+    <section class="username_form">
+      <form id="username_entry" name="username_entry">
+        <label for="username">What's your name? (max 10 characters):</label>
+        <input type="text" id="username" name="username" required minlength="2" maxlength="10" size="12" placeholder="Name">
+        <input id="submit_button" type="submit" value="Submit">
+      </form> 
+    </section>
+
+    <h id="player_choice">Please choose your move:</h>
+    <section class="player_choice_buttons">
+      <button id="rock_button" class="rps_button">Rock</button>
+      <button id="paper_button" class="rps_button">Paper</button>
+      <button id="scissors_button" class="rps_button">Scissors</button>
+    </section>
+
+    <p id="computer_choice">The computer is waiting for you to choose...</p>
+
+    <section class="results">
+      <h2 id="results">Results</h2>
+      <p id="total_games">Games played: 0</p>
+      <p id="wins">Won: 0</p>
+      <p id="losses">Lost: 0</p>
+      <p id="draws">Drew: 0</p>
+    </section>
   </div>
 
-  <p id="player_choice">Please choose your move:</p>
-  <div class="player_choice_buttons">
-    <button id="rock_button" class="rps_button">Rock</button>
-    <button id="paper_button" class="rps_button">Paper</button>
-    <button id="scissors_button" class="rps_button">Scissors</button>
-  </div>
-
-  <p id="computer_choice">The computer chose:</p>
-
-  <div class="results">
-    <h2 id="results">Results</h2>
-    <p id="total_games">Games played: 0</p>
-    <p id="wins">Won: 0</p>
-    <p id="losses">Lost: 0</p>
-    <p id="draws">Drew: 0</p>
-  </div>
   <body>
     <script src="main.js"></script>
   </body>
+
 </html>
