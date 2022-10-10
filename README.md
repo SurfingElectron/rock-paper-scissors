@@ -3,8 +3,7 @@ Enter your name and play Rock, Paper, Scissors against a computer opponent, and 
 
 
 ## Demo
-
-Insert gif or link to demo
+![Rock, Paper, Scissors Demo](img/RPS_demo.gif)
 
 
 # Lessons Learned
