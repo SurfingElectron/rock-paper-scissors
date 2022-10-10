@@ -12,7 +12,7 @@ const drawLi = document.querySelector('#draws');
 
 const computerChoice = document.querySelector('#computer_choice');
 const playerChoice = document.querySelector('#player_choice');
-const results = document.querySelector('#results');
+const gameResult = document.querySelector('#game_result');
 const formDiv = document.querySelector('.username_form');
 const usernameForm = document.getElementById('username_entry');
 
@@ -49,16 +49,19 @@ function matchTracking(resultCheck) {
     score.roundCount++;
     totalLi.innerText = `Games played: ${score.roundCount}`;
     if(resultCheck === 1) {
+        gameResult.innerText = `You won! Play again?`
         score.winCount++;
         winLi.innerText = `Won: ${score.winCount}`;
         return score.winCount
     }; 
     if(resultCheck === -1) {
+        gameResult.innerText = `You lost! Play again?`
         score.lossCount++;
         lossLi.innerText = `Lost: ${score.lossCount}`;
         return score.lossCount;
     };
     if(resultCheck === 0) {
+        gameResult.innerText = `You drew! Play again?`
         score.drawCount++;
         drawLi.innerText = `Drew: ${score.drawCount}`;
         return score.drawCount;
@@ -79,17 +82,17 @@ function computerMove() {
   let randomNumber = Math.floor(Math.random() * (3 - 1 + 1)) + 1; //This should return 1, 2 or 3
     if(randomNumber === 1) {
         computerRPS = 'rock';
-        computerChoice.innerText = `The computer chose ${computerRPS}. Play again?`;
+        computerChoice.innerText = `The computer chose ${computerRPS}.`;
         return computerRPS;
     }
     else if(randomNumber === 2) {
         computerRPS = 'paper';
-        computerChoice.innerText = `The computer chose ${computerRPS}. Play again?`;
+        computerChoice.innerText = `The computer chose ${computerRPS}.`;
         return computerRPS;
     } 
     else if(randomNumber === 3) {
         computerRPS = 'scissors'
-        computerChoice.innerText = `The computer chose ${computerRPS}. Play again?`;
+        computerChoice.innerText = `The computer chose ${computerRPS}.`;
         return computerRPS;
     }
 }

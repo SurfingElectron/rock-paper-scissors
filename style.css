@@ -30,6 +30,7 @@ h1 {
   font-family: Oxygen, Helvetica, sans-serif;
   text-align: center;
   font-size: 48px;
+  margin: 20px;
 }
 
 label {
@@ -57,7 +58,6 @@ input[type=button] {
   gap: 2vh;
 }
 
-
 .player_choice_buttons {
   display: flex;
   justify-content: center;
@@ -78,7 +78,7 @@ input[type=button] {
   box-shadow: inset 3px 3px 5px black; 
 }
 
-.results {
+.results_summary {
   display: flex;
   justify-content: center;
   flex-direction: column;
